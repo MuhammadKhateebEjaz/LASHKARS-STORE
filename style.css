@@ -695,3 +695,420 @@ height:55px;
 
 
 }
+
+
+
+/* =========================
+   MODERN NAVBAR
+========================= */
+
+
+.navbar{
+
+display:flex;
+align-items:center;
+gap:25px;
+
+}
+
+
+.navbar a{
+
+text-decoration:none;
+font-weight:700;
+color:#111;
+
+transition:.3s;
+
+}
+
+
+.navbar a:hover{
+
+color:#008000;
+
+transform:translateY(-3px);
+
+}
+
+
+
+
+.cart-btn{
+
+background:#111;
+
+color:white;
+
+border:none;
+
+padding:12px 20px;
+
+border-radius:30px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+
+.cart-btn:hover{
+
+background:#008000;
+
+transform:scale(1.05);
+
+}
+
+
+
+#cartCount{
+
+background:#ffd400;
+
+color:#111;
+
+padding:3px 8px;
+
+border-radius:50%;
+
+margin-left:5px;
+
+}
+
+
+
+
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+
+.hero{
+
+min-height:500px;
+
+padding:60px 5%;
+
+display:flex;
+
+align-items:center;
+
+
+background:
+
+linear-gradient(
+135deg,
+#ffd400,
+#fff
+);
+
+
+border-radius:0 0 50px 50px;
+
+
+}
+
+
+
+.hero div{
+
+max-width:600px;
+
+}
+
+
+
+.hero h1{
+
+
+font-size:55px;
+
+font-weight:900;
+
+line-height:1.1;
+
+}
+
+
+.hero p{
+
+
+font-size:20px;
+
+margin:20px 0;
+
+color:#333;
+
+}
+
+
+
+
+.hero button{
+
+
+background:#111;
+
+color:white;
+
+border:none;
+
+padding:15px 35px;
+
+border-radius:30px;
+
+
+font-size:18px;
+
+font-weight:bold;
+
+
+cursor:pointer;
+
+
+transition:.3s;
+
+
+}
+
+
+
+.hero button:hover{
+
+
+background:#008000;
+
+
+transform:translateY(-5px);
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+ ABOUT SECTION
+========================= */
+
+
+.about{
+
+
+margin:50px 5%;
+
+padding:40px;
+
+background:white;
+
+
+border-radius:30px;
+
+
+text-align:center;
+
+
+box-shadow:
+
+0 15px 40px rgba(0,0,0,.12);
+
+
+}
+
+
+
+.about h2{
+
+
+font-size:35px;
+
+font-weight:900;
+
+margin-bottom:20px;
+
+
+}
+
+
+
+.about p{
+
+
+font-size:18px;
+
+line-height:1.7;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+ CONTACT SECTION
+========================= */
+
+
+.contact{
+
+
+margin:50px 5%;
+
+
+padding:40px;
+
+
+background:#111;
+
+
+color:white;
+
+
+border-radius:30px;
+
+
+text-align:center;
+
+
+}
+
+
+
+.contact h2{
+
+
+color:#ffd400;
+
+font-size:35px;
+
+font-weight:900;
+
+
+}
+
+
+
+.contact p{
+
+
+font-size:18px;
+
+margin-top:10px;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+ CART ANIMATION
+========================= */
+
+
+.cart-btn{
+
+
+animation:pulse 2s infinite;
+
+
+}
+
+
+
+@keyframes pulse{
+
+
+0%{
+
+box-shadow:0 0 0 0 rgba(255,212,0,.7);
+
+}
+
+
+70%{
+
+box-shadow:0 0 0 15px rgba(255,212,0,0);
+
+}
+
+
+100%{
+
+box-shadow:0 0 0 0 rgba(255,212,0,0);
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+/* MOBILE NAVBAR */
+
+
+@media(max-width:768px){
+
+
+.navbar{
+
+width:100%;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+
+}
+
+
+.navbar a{
+
+
+font-size:14px;
+
+
+}
+
+
+
+.hero h1{
+
+
+font-size:35px;
+
+
+}
+
+
+.hero p{
+
+
+font-size:16px;
+
+
+}
+
+
+
+}
