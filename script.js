@@ -80,3 +80,66 @@ window.onclick=function(event){
 
 
 }
+
+
+
+
+let cart=[];
+
+
+function addCart(name,price){
+
+
+cart.push({
+
+name:name,
+price:price
+
+});
+
+
+document.getElementById("cartCount").innerHTML = cart.length;
+
+
+alert(name+" Added To Cart 🛒");
+
+
+}
+
+
+
+function openCart(){
+
+
+let box=document.getElementById("cartItems");
+
+
+box.innerHTML="";
+
+
+cart.forEach(item=>{
+
+
+box.innerHTML += `
+
+<p>
+${item.name} - Rs ${item.price}
+</p>
+
+`;
+
+});
+
+
+document.getElementById("cartModal").style.display="flex";
+
+
+}
+
+
+
+function closeCart(){
+
+document.getElementById("cartModal").style.display="none";
+
+}
