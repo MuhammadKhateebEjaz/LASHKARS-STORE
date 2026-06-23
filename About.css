@@ -153,35 +153,329 @@ font-weight:bold;
 
 
 
+/* FOOTER */
+
+
+footer{
+
+
+    background:#111;
+
+    color:white;
+
+
+    text-align:center;
+
+
+    padding:40px;
+
+
+}
+
+
+footer h2{
+
+
+    color:#ffd400;
+
+    font-size:30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* MOBILE RESPONSIVE */
+
+
 @media(max-width:768px){
 
 
-.about-container{
 
-flex-direction:column;
+.header{
 
-text-align:center;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+.logo-area h1{
+
+
+    font-size:22px;
+
+}
+
+
+
+.header-icons{
+
+
+    font-size:12px;
+
+}
+
+
+
+.products h2{
+
+    font-size:28px;
+
+}
+
+
+
+.product-card img{
+
+
+    height:180px;
+
+}
+
+
+
+.features{
+
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+}
+
 
 
 }
 
 
 
-.about-content h2{
 
-font-size:30px;
-
-}
+@media(max-width:450px){
 
 
-
-.about-cards{
+.features{
 
 
 grid-template-columns:1fr;
 
 
 }
+
+
+
+.logo{
+
+
+width:55px;
+
+height:55px;
+
+
+}
+
+
+
+}
+
+
+
+/* =========================
+   MODERN NAVBAR
+========================= */
+
+
+.navbar{
+
+display:flex;
+align-items:center;
+gap:25px;
+
+}
+
+
+.navbar a{
+
+text-decoration:none;
+font-weight:700;
+color:#111;
+
+transition:.3s;
+
+}
+
+
+.navbar a:hover{
+
+color:#008000;
+
+transform:translateY(-3px);
+
+}
+
+
+
+
+.cart-btn{
+
+background:#111;
+
+color:white;
+
+border:none;
+
+padding:12px 20px;
+
+border-radius:30px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+
+.cart-btn:hover{
+
+background:#008000;
+
+transform:scale(1.05);
+
+}
+
+
+
+#cartCount{
+
+background:#ffd400;
+
+color:#111;
+
+padding:3px 8px;
+
+border-radius:50%;
+
+margin-left:5px;
+
+}
+
+
+
+
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+
+.hero{
+
+min-height:500px;
+
+padding:60px 5%;
+
+display:flex;
+
+align-items:center;
+
+
+background:
+
+linear-gradient(
+135deg,
+#ffd400,
+#fff
+);
+
+
+border-radius:0 0 50px 50px;
+
+
+}
+
+
+
+.hero div{
+
+max-width:600px;
+
+}
+
+
+
+.hero h1{
+
+
+font-size:55px;
+
+font-weight:900;
+
+line-height:1.1;
+
+}
+
+
+.hero p{
+
+
+font-size:20px;
+
+margin:20px 0;
+
+color:#333;
+
+}
+
+
+
+
+.hero button{
+
+
+background:#111;
+
+color:white;
+
+border:none;
+
+padding:15px 35px;
+
+border-radius:30px;
+
+
+font-size:18px;
+
+font-weight:bold;
+
+
+cursor:pointer;
+
+
+transition:.3s;
+
+
+}
+
+
+
+.hero button:hover{
+
+
+background:#008000;
+
+
+transform:translateY(-5px);
 
 
 }
