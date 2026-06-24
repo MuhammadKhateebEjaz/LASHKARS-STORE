@@ -1,3 +1,97 @@
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+body{
+
+    background:#f3f3f3;
+    color:#222;
+
+}
+
+
+
+/* HEADER */
+
+
+.header{
+
+    background:#ffd400;
+    padding:18px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.15);
+
+}
+
+
+
+.logo-area{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+
+.logo{
+
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
+
+    background:white;
+
+    box-shadow:
+    0 10px 20px rgba(0,0,0,0.2);
+
+}
+
+
+
+.logo-area h1{
+
+    font-size:32px;
+    font-weight:900;
+    letter-spacing:1px;
+
+}
+
+
+
+.logo-area p{
+
+    font-weight:bold;
+    font-size:15px;
+
+}
+
+
+
+.header-icons{
+
+    display:flex;
+    gap:20px;
+    font-weight:bold;
+
+}
+
+
+
+
+
 /* PRODUCTS */
 
 
