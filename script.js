@@ -160,7 +160,7 @@ function checkoutCart(){
 
     // اپنا WhatsApp نمبر لگاؤ
 
-    let whatsappNumber = "923001234567";
+    let whatsappNumber = "923496550742";
 
     window.open(
         "https://wa.me/" +
