@@ -146,13 +146,13 @@ document.getElementById("customerPhone").value.trim();
 
     let total = 0;
 
-    let message = `🛍️ *LASHKARS STORE*
+    let message = `🏪 *LASHKARS STORE*
 
-👤 Customer: ${customerName}
+👨🏻‍💻🙋🏻‍♂️ Customer: ${customerName}
 
-📱 WhatsApp: ${customerPhone}
+📲 WhatsApp: ${customerPhone}
 
-📦 *ORDER DETAILS*
+🛒🛍️ *ORDER DETAILS*
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -163,7 +163,7 @@ document.getElementById("customerPhone").value.trim();
         total += Number(item.price);
 
         message += `${index + 1}. ${item.name}
-💰 Price: Rs ${item.price}
+💸 Price: Rs ${item.price}
 
 `;
 
@@ -173,7 +173,7 @@ document.getElementById("customerPhone").value.trim();
 
 💵 Total Bill: Rs ${total}
 
-✨ Thank you for shopping with LASHKARS STORE`;
+✨🛒 Thank you for shopping with LASHKARS STORE`;
 
     let whatsappNumber = "923496550742";
 
