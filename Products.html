@@ -267,3 +267,96 @@ Order Now 🛒
 
 
 </section>
+
+<!-- ORDER MODAL -->
+
+
+<div id="orderModal" class="modal">
+
+
+<div class="modal-box">
+
+
+<span class="close" onclick="closeOrder()">
+×
+</span>
+
+
+
+<h2>
+Confirm Order
+</h2>
+
+
+
+<p id="productName"></p>
+
+
+
+
+<form action="https://formspree.io/f/xpqegqqd" method="POST">
+
+
+<input 
+type="hidden"
+name="Product"
+id="productInput">
+
+
+
+<input 
+type="hidden"
+name="Price"
+id="priceInput">
+
+
+
+
+
+<input 
+type="text"
+name="Customer Name"
+placeholder="Full Name"
+required>
+
+
+
+
+<input 
+type="tel"
+name="WhatsApp Number"
+placeholder="WhatsApp Number"
+required>
+
+
+
+
+<textarea
+name="Address"
+placeholder="Full Delivery Address"
+required>
+</textarea>
+
+
+
+
+
+
+<button type="submit">
+PLACE ORDER 🚀
+</button>
+
+
+
+
+</form>
+
+
+
+</div>
+
+
+</div>
+
+
+ 
