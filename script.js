@@ -134,10 +134,10 @@ function removeItem(index){
 function checkoutCart(){
 
     let customerName =
-    document.getElementById("customerName").value;
+document.getElementById("customerName").value.trim();
 
     let customerPhone =
-    document.getElementById("customerPhone").value;
+document.getElementById("customerPhone").value.trim();
 
     if(customerName === "" || customerPhone === ""){
         alert("Please enter your Name and WhatsApp Number");
