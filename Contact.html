@@ -6,78 +6,132 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>LASHKARS STORE | Men's Fashion</title>
+<title>Contact Us | LASHKARS STORE</title>
+  <!-- Tailwind CDN -->
+<!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
-
-<!-- Tailwind CDN -->
-<script src="https://cdn.tailwindcss.com"></script>
-
-
-<!-- Custom CSS -->
-<link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="Contact.css">
 
 </head>
 
-
 <body>
 
-
-<!-- NAVBAR -->
+<!-- HEADER -->
 
 <header class="header">
-
 
 <div class="logo-area">
 
 <img src="logo.png" class="logo">
-
 
 <div>
 <h1>LASHKARS STORE</h1>
 <p>Men's Fashion | Shoes | Watches | Wallets</p>
 </div>
 
-
 </div>
-
-
 
 <nav class="navbar">
 
+<a href="index.html">Home</a>
 
-<a href="index.html">
-Home
-</a>
+<a href="Products.html">Products</a>
 
+<a href="About.html">About</a>
 
-<a href="Products.html">
-Products
-</a>
-
-
-<a href="About.html">
-About
-</a>
-
-
-
-
-
-
-<button class="cart-btn" onclick="openCart()">
-
-🛒 Cart 
-<span id="cartCount">0</span>
-
-</button>
-
-
+<a href="Contact.html">Contact</a>
 
 </nav>
 
-
 </header>
+
+<!-- CONTACT SECTION -->
+
+<section class="contact-section">
+
+<div class="contact-container">
+
+<h2>Contact Us</h2>
+
+<p class="subtitle">
+Have any questions or need help with your order?
+Feel free to contact us.
+</p>
+
+<div class="contact-info">
+
+<div class="info-box">
+<h3>📞 Phone</h3>
+<p>+92 XXX XXXXXXX</p>
+</div>
+
+<div class="info-box">
+<h3>📧 Email</h3>
+<p>lashkarsstore@gmail.com</p>
+</div>
+
+<div class="info-box">
+<h3>📍 Address</h3>
+<p>Pakistan</p>
+</div>
+
+</div>
+
+<form action="https://formspree.io/f/xpqegqqd" method="POST" class="contact-form">
+
+<input
+type="text"
+name="Name"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+name="Email"
+placeholder="Your Email"
+required>
+
+<input
+type="tel"
+name="Phone"
+placeholder="WhatsApp Number"
+required>
+
+<textarea
+name="Message"
+placeholder="Write Your Message"
+required>
+</textarea>
+
+<button type="submit">
+Send Message 🚀
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2>LASHKARS STORE</h2>
+
+<p>Men's Fashion | Shoes | Watches | Wallets</p>
+
+<p>© 2026 LASHKARS STORE</p>
+
+<p>Developed by Muhammad Khateeb Ejaz</p>
+
+</footer>
+
+</body>
+
+</html>
+
+
+  
