@@ -47,24 +47,21 @@
 
 <nav class="navbar">
 
-
 <a href="index.html">
 Home
 </a>
 
-
-
-
+<a href="Products.html">
+Products
+</a>
 
 <a href="About.html">
 About
 </a>
 
-
 <a href="Contact.html">
 Contact
 </a>
-
 
 
 <button class="cart-btn" onclick="openCart()">
@@ -74,10 +71,7 @@ Contact
 
 </button>
 
-
-
 </nav>
-
 
 </header>
 <!-- PRODUCTS SECTION -->
@@ -115,12 +109,13 @@ Rs. 1200
 
 
 
-<button onclick="openOrder('Premium Cotton Shirt','1200')">
-
-Order Now 🛒
-
+<button onclick="addCart('Premium Cotton Shirt',1200)">
+ADD TO CART 🛒
 </button>
 
+<button onclick="openOrder('Premium Cotton Shirt',1200)">
+BUY NOW 🚀
+</button>
 
 </div>
 
@@ -149,10 +144,12 @@ Rs. 950
 
 
 
-<button onclick="openOrder('Casual Summer Shirt','950')">
+<button onclick="addCart('Casual Summer Shirt',950)">
+ADD TO CART 🛒
+</button>
 
-Order Now 🛒
-
+<button onclick="openOrder('Casual Summer Shirt',950)">
+BUY NOW 🚀
 </button>
 
 
@@ -178,15 +175,17 @@ Premium Sports Shoes
 
 
 <p class="price">
-Rs. 2500
+Rs. 2250
 </p>
 
 
 
-<button onclick="openOrder('Premium Sports Shoes','2500')">
+<button onclick="addCart('Premium Sports Shoes',2250)">
+ADD TO CART 🛒
+</button>
 
-Order Now 🛒
-
+<button onclick="openOrder('Premium Sports Shoes',2250)">
+BUY NOW 🚀
 </button>
 
 
@@ -217,10 +216,12 @@ Rs. 2000
 
 
 
-<button onclick="openOrder('Luxury Watch','3500')">
+<button onclick="addCart('Luxury Watch',2000)">
+ADD TO CART 🛒
+</button>
 
-Order Now 🛒
-
+<button onclick="openOrder('Luxury Watch',2000)">
+BUY NOW 🚀
 </button>
 
 
@@ -252,10 +253,12 @@ Rs. 500
 
 
 
-<button onclick="openOrder('Leather Wallet','800')">
+<button onclick="addCart('Leather Wallet',500)">
+ADD TO CART 🛒
+</button>
 
-Order Now 🛒
-
+<button onclick="openOrder('Leather Wallet',500)">
+BUY NOW 🚀
 </button>
 
 
@@ -358,7 +361,57 @@ PLACE ORDER 🚀
 
 </div>
 
+ 
 
+<!-- CART MODAL -->
+
+<div id="cartModal" class="modal">
+
+<div class="modal-box">
+
+<span class="close" onclick="closeCart()">
+×
+</span>
+
+<h2>
+Your Cart 🛒
+</h2>
+
+<input
+type="text"
+id="customerName"
+placeholder="Your Name">
+
+<input
+type="tel"
+id="customerPhone"
+placeholder="WhatsApp Number">
+
+<br><br>
+
+<div id="cartItems">
+
+Your cart is empty
+
+</div>
+
+<button onclick="closeCart()">
+Continue Shopping
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+ 
  
 <!-- FEATURES -->
 
