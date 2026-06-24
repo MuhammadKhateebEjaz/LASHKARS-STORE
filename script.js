@@ -133,8 +133,14 @@ function removeItem(index){
 
 function checkoutCart(){
 
-    if(cart.length === 0){
-        alert("Cart is Empty");
+    let customerName =
+    document.getElementById("customerName").value;
+
+    let customerPhone =
+    document.getElementById("customerPhone").value;
+
+    if(customerName === "" || customerPhone === ""){
+        alert("Please enter your Name and WhatsApp Number");
         return;
     }
 
@@ -142,7 +148,11 @@ function checkoutCart(){
 
     let message = `🛍️ *LASHKARS STORE*
 
-📦 *NEW ORDER RECEIVED*
+👤 Customer: ${customerName}
+
+📱 WhatsApp: ${customerPhone}
+
+📦 *ORDER DETAILS*
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -152,7 +162,7 @@ function checkoutCart(){
 
         total += Number(item.price);
 
-        message += `${index + 1}. *${item.name}*
+        message += `${index + 1}. ${item.name}
 💰 Price: Rs ${item.price}
 
 `;
@@ -161,9 +171,7 @@ function checkoutCart(){
 
     message += `━━━━━━━━━━━━━━━━━━
 
-💵 *TOTAL BILL:* Rs ${total}
-
-📞 Please contact customer for order confirmation.
+💵 Total Bill: Rs ${total}
 
 ✨ Thank you for shopping with LASHKARS STORE`;
 
