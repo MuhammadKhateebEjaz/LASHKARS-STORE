@@ -158,7 +158,6 @@ function checkoutCart(){
 
     message += "%0A💰 Total: Rs " + total;
 
-    // اپنا WhatsApp نمبر لگاؤ
 
     let whatsappNumber = "923496550742";
 
