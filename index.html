@@ -126,7 +126,7 @@ Premium Cotton Shirt
 
 
 <p class="price">
-Rs. 1,500
+Rs. 1,200
 </p>
 
 
@@ -175,7 +175,7 @@ Rs. 950
 ADD TO CART 🛒
 </button>
 
-<button onclick="openOrder(Casual Summer Shirt',950)">
+<button onclick="openOrder('Casual Summer Shirt',950)">
 BUY NOW 🚀
 </button>
 
@@ -213,10 +213,9 @@ Rs. 2,250
 ADD TO CART 🛒
 </button>
 
-<button onclick="openOrder(Premium Sports Shoes',2250)">
+<button onclick="openOrder('Premium Sports Shoes',2250)">
 BUY NOW 🚀
 </button>
-
 
 </div>
 
@@ -373,6 +372,17 @@ PLACE ORDER 🚀
 
 <!-- CART MODAL -->
 
+<div id="cartModal" class="modal">
+
+<div class="modal-box">
+
+<span class="close" onclick="closeCart()">
+×
+</span>
+
+<h2>
+Your Cart 🛒
+</h2>
 
 <input
 type="text"
@@ -384,8 +394,7 @@ type="tel"
 id="customerPhone"
 placeholder="WhatsApp Number">
 
-
-
+<br><br>
 
 <div id="cartItems">
 
@@ -393,19 +402,13 @@ Your cart is empty
 
 </div>
 
-
-
-
 <button onclick="closeCart()">
 
 Continue Shopping
 
 </button>
 
-
-
 </div>
-
 
 </div>
 
