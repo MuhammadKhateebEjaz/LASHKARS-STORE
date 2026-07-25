@@ -10,8 +10,22 @@ const productInput = document.getElementById("productInput");
 
 const priceInput = document.getElementById("priceInput");
 
-// Open Order Popup
 
+const paymentRadios = document.getElementsByName("Payment Method");
+
+const transactionField =
+document.querySelector('input[name="Transaction ID"]');
+
+const screenshotField =
+document.querySelector('input[name="Payment Screenshot"]');
+
+const transactionLabel =
+document.getElementById("transactionLabel");
+
+const screenshotLabel =
+document.getElementById("screenshotLabel");
+
+// Open Order Popup
 function openOrder(product, price){
 
     modal.style.display = "flex";
@@ -25,9 +39,50 @@ function openOrder(product, price){
     priceInput.value = "Rs. " + price;
 
     document.body.style.overflow = "hidden";
+
+
+
+
+
+transactionField.style.display = "none";
+screenshotField.style.display = "none";
+transactionLabel.style.display = "none";
+screenshotLabel.style.display = "none";
+
+paymentRadios.forEach(radio => {
+
+    radio.onchange = function(){
+
+        if(this.value === "Cash On Delivery"){
+
+            transactionField.style.display = "none";
+            screenshotField.style.display = "none";
+            transactionLabel.style.display = "none";
+            screenshotLabel.style.display = "none";
+
+        }else{
+
+            transactionField.style.display = "block";
+            screenshotField.style.display = "block";
+            transactionLabel.style.display = "block";
+            screenshotLabel.style.display = "block";
+
+        }
+
+    };
+
+});
+
+paymentRadios[0].checked = true;
+
 }
+    
+
+
+
 
 // Close Order Popup
+
 
 function closeOrder(){
 
